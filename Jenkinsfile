@@ -49,7 +49,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('9') {
       steps {
         echo 'done'
       }
