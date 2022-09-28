@@ -49,12 +49,5 @@ pipeline {
       }
     }
 
-    stage('7') {
-      steps {
-        node(label: 'bh ')
-        echo ' gcb'
-      }
-    }
-
   }
 }
