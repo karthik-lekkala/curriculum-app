@@ -27,7 +27,32 @@ pipeline {
 
     stage('2') {
       steps {
-        dir(path: '/home')
+        sh 'echo \'3\''
+      }
+    }
+
+    stage('4') {
+      steps {
+        sh 'echo \'3\''
+      }
+    }
+
+    stage('5') {
+      steps {
+        echo 'dswx'
+      }
+    }
+
+    stage('6') {
+      steps {
+        sleep 10
+      }
+    }
+
+    stage('7') {
+      steps {
+        node(label: 'bh ')
+        echo ' gcb'
       }
     }
 
