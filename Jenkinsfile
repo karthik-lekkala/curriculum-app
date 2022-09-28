@@ -49,5 +49,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        echo 'done'
+      }
+    }
+
   }
 }
