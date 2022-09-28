@@ -9,8 +9,25 @@ pipeline {
     }
 
     stage('log') {
+      parallel {
+        stage('log') {
+          steps {
+            sh 'ls -la'
+          }
+        }
+
+        stage('Irun 1') {
+          steps {
+            sh 'echo \'1\''
+          }
+        }
+
+      }
+    }
+
+    stage('2') {
       steps {
-        sh 'ls -la'
+        dir(path: '/home')
       }
     }
 
